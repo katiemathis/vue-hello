@@ -11,6 +11,7 @@ const root = new Vue (
             animal: '',
             bodyPart: '',
             hideOption: 'hidden',
+            logo: 'download.png'
         },
         methods: {
             showMadlib: function () {
@@ -19,7 +20,8 @@ const root = new Vue (
                 } else {
                     this.hideOption = 'hidden';
                 }
-            }
+            },
+
 
         }
     }

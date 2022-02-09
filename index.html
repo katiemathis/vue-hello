@@ -9,18 +9,29 @@
 </head>
 <body>
 
-    <div id="root">
-        <input type="text" v-model="nome" placeholder="someone's name">
-        <input type="text" v-model="theme" placeholder="party theme">
-        <input type="text" v-model="place" placeholder="place">
-        <input type="text" v-model="day" placeholder="day">
-        <input type="text" v-model="time" placeholder="time">
-        <input type="text" v-model="verb" placeholder="verb">
-        <input type="text" v-model="animal" placeholder="animal">
-        <input type="text" v-model="bodyPart" placeholder="body part">
-        <button @click="showMadlib">See Madlib</button>
+    <div class="container" id="root">
+        <div id="top">
 
-        <h1 v-bind:class="hideOption">{{nome}} is having a {{theme}} party! It's going to be at {{place}} on {{day}}. Please make sure to show up at {{time}}, or else you will be required to {{verb}} a {{animal}} with your {{bodyPart}}.</h1>
+            <img :src="logo" alt="">
+
+        </div>
+
+        <div id="create">
+            <input type="text" v-model="nome" placeholder="someone's name">
+            <input type="text" v-model="theme" placeholder="party theme">
+            <input type="text" v-model="place" placeholder="place">
+            <input type="text" v-model="day" placeholder="day">
+            <input type="text" v-model="time" placeholder="time">
+            <input type="text" v-model="verb" placeholder="verb">
+            <input type="text" v-model="animal" placeholder="animal">
+            <input type="text" v-model="bodyPart" placeholder="body part">
+            
+        </div>
+        <div id="result">
+            <button @click="showMadlib">See Madlib</button>
+
+            <h1 v-bind:class="hideOption">{{nome}} is having a {{theme}} party! It's going to be at {{place}} on {{day}}. Please make sure to show up at {{time}}, or else you will be required to {{verb}} a {{animal}} with your {{bodyPart}}.</h1>
+        </div>
 
     </div>
 

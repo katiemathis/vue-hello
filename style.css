@@ -1,3 +1,21 @@
+.container {
+    width: 80%;
+    min-height: 100vh;
+    margin: auto;
+    border-style:dashed;
+    
+ 
+
+}
+
+#top, #create, #result {
+    width: 50%;
+    margin: 10px auto;
+}
+
+
+
+
 .hidden {
     display: none;
 }
