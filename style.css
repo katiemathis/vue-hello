@@ -3,13 +3,18 @@
     min-height: 100vh;
     margin: auto;
     border-style:dashed;
-    
+
  
 
 }
 
-#top, #create, #result {
+#top {
     width: 50%;
+    margin: 10px auto;
+}
+
+#create, #result {
+    width: 40%;
     margin: 10px auto;
 }
 
