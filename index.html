@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madlibs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="root">
+        <input type="text" v-model="nome" placeholder="someone's name">
+        <input type="text" v-model="theme" placeholder="party theme">
+        <input type="text" v-model="place" placeholder="place">
+        <input type="text" v-model="day" placeholder="day">
+        <input type="text" v-model="time" placeholder="time">
+        <input type="text" v-model="verb" placeholder="verb">
+        <input type="text" v-model="animal" placeholder="animal">
+        <input type="text" v-model="bodyPart" placeholder="body part">
+        <button @click="showMadlib">See Madlib</button>
+
+        <h1 v-bind:class="hideOption">{{nome}} is having a {{theme}} party! It's going to be at {{place}} on {{day}}. Please make sure to show up at {{time}}, or else you will be required to {{verb}} a {{animal}} with your {{bodyPart}}.</h1>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    
+</body>
+</html>
