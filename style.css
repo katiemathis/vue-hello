@@ -1,10 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+
 .container {
     width: 80%;
     min-height: 100vh;
     margin: auto;
     border-style:dashed;
-
- 
 
 }
 
@@ -21,6 +30,10 @@ img {
 #create, #result {
     width: 50%;
     margin: 10px auto;
+}
+
+button {
+    padding: 0 10px;
 }
 
 
